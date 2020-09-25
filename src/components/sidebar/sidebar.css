@@ -4,8 +4,17 @@ body {
   #sidebarMenu{
     width:220px;
   }
-    
   
+  .sidebar-menu {
+    grid-column: span 4;
+    border: #333;
+  }
+  
+  .sidebar-title2 {
+    padding-top: 1.5em;
+    font-style: italic;
+    color: #999;
+  }
 
   .feather {
     width: 16px;
@@ -22,14 +31,16 @@ body {
     top: 0;
     bottom: 0;
     left: 0;
+    margin-top: 56px;
     z-index: 100; /* Behind the navbar */
     padding: 48px 0 0; /* Height of navbar */
-    box-shadow: inset -1px 0 0 rgba(0, 0, 0, .1);
+    background-color: rgba(153, 153, 153, .05);
+    box-shadow: inset -1px 0 0 rgba(0, 0, 0, .15);
   }
   
-  @media (max-width: 767.98px) {
+  @media (max-width: 500px) {
     .sidebar {
-      top: 5rem;
+      display: none;
     }
   }
   
@@ -73,36 +84,12 @@ body {
     text-transform: uppercase;
   }
   
-  /*
-   * Navbar
-   */
-  
-  .navbar-brand {
-    padding-top: .75rem;
-    padding-bottom: .75em;
-    font-size: 1rem;
-    background-color: rgba(0, 0, 0, .25);
-    box-shadow: inset -1px 0 0 rgba(0, 0, 0, .25);
+
+  .first-nav-item {
+    top: 5;
+    padding-top: 5em;
   }
-  
-  .navbar .navbar-toggler {
-    top: .25rem;
-    right: 1rem;
-  }
-  
-  .navbar .form-control {
-    padding: .75rem 1rem;
-    border-width: 0;
-    border-radius: 0;
-  }
-  
-  .form-control-dark {
-    color: #fff;
-    background-color: rgba(255, 255, 255, .1);
-    border-color: rgba(255, 255, 255, .1);
-  }
-  
-  .form-control-dark:focus {
-    border-color: transparent;
-    box-shadow: 0 0 0 3px rgba(255, 255, 255, .25);
+
+  .nav-item:hover a{
+    color:  #007bff;
   }
