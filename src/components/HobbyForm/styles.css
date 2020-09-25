@@ -1,0 +1,61 @@
+.add-hobby-container{
+	position:fixed;
+	right:50vw;
+	width:100px;
+	display:flex;
+	flex-direction:column;
+	align-items: center;
+}
+
+.btn-container{
+	height:40px;
+	width:40px;
+	display:flex;
+	justify-content: center;
+}
+.btn-container:hover{
+	cursor:pointer;
+}
+
+.btn-container__img{
+	height:100%;
+	width:100%;
+}
+.btn-container__img--animate{
+	height:100%;
+	width:100%;
+	animation: rotation 0.3s 1 linear;
+}
+
+.hobby-form--animate{
+	max-height:60px;
+	-webkit-transition: max-height 0.5s ease-in-out;
+	transition: max-height 0.5s ease-in-out;
+}
+
+.hobby-form--hidden{
+	height:0;
+}
+
+@keyframes rotation {
+    from {
+      -webkit-transform: rotate(0deg);
+    }
+    to {
+      -webkit-transform: rotate(90deg);
+    }
+  }
+
+
+.form-container--animate{
+	width:500px;
+	background-color: red;
+	height:500px;
+	-webkit-transition: max-height 0.5s ease-in-out;
+	transition: all 0.4s ease-in-out;
+	overflow: hidden;
+}
+.form-container--hidden{
+	height:0px;
+	overflow: hidden;
+}
