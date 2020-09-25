@@ -1,11 +1,15 @@
 import React from 'react';
-import Navbar from '../../components/Navbar/Navbar'
+import Navbar from '../../components/Navbar/Navbar';
+import Sidebar from '../../components/sidebar/Sidebar';
 
 class Home extends React.Component{
 	render(){
 		return(
-			<Navbar/>
-		)
+			<div>
+			<Navbar />
+			<Sidebar />
+			</div>
+		);
 	};
 }
 
