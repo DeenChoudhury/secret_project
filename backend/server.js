@@ -3,7 +3,7 @@ const app = express() // generate an app object
 const bodyParser = require("body-parser") // requiring the body-parser
 const db = require('./database');
 
-app.get('/', function (req, res) {
+app.get('/rest', function (req, res) {
 	res.send('Hello World')
   	console.log('Hello');
 
