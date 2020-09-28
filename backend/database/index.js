@@ -1,6 +1,7 @@
 const mongoose = require('mongoose');
 
 const uri = 'mongodb+srv://admin-deen:fatherlordozai@cluster0.asaf9.mongodb.net/userDB';
+
 mongoose.connect(uri, {
   useNewUrlParser: true,
   useUnifiedTopology: true
