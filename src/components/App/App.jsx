@@ -12,6 +12,7 @@ class App extends React.Component{
 				<BrowserRouter>
 					<Switch>
 						<Route path="/" component ={Home}/>
+						<Route path="/dashboard" component ={Home}/>
 					</Switch>
 				</BrowserRouter>
    		</div>
