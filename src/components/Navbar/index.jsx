@@ -5,11 +5,11 @@ class Navbar extends React.Component{
     render(){
         return(
         <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
-            <Link to="/" className="navbar-brand"> Rootine</Link>
+            <Link to="/dashboard" className="navbar-brand"> Rootine</Link>
             <div class="collapse navbar-collapse" id="navbarsExample03">
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item active">
-                        <Link to="/meh" className="nav-link"> Hello</Link>
+                        <Link to="/dashboard" className="nav-link"> Hello</Link>
                     </li>
                 </ul>
           </div>

@@ -9,16 +9,16 @@ function SignupPage(){
                       
             <h1> Signup form </h1> 
                               
-            <input class="box" type="text" name="first_name" id="first_name" 
+            <input className="box" type="text" name="first_name" id="first_name" 
             placeholder="First name"  required /><br/> 
 
-            <input class="box" type="text" name="last_name" id="last_name" 
+            <input className="box" type="text" name="last_name" id="last_name" 
             placeholder="Last name"  required /><br/> 
                               
-            <input class="box" type="email" name="email" id="email" 
+            <input className="box" type="email" name="email" id="email" 
             placeholder="E-Mail " required /><br/> 
                               
-            <input class="box" type="password" name="password" 
+            <input className="box" type="password" name="password" 
             id="password" placeholder="Password " required/><br/> 
                          
             <input type="submit" id="submitDetails"  
