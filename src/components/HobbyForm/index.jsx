@@ -1,5 +1,4 @@
 import React, {useState} from 'react';
-
 import './styles.css';
 import add_button from 'images/add_button.svg';
 import axios from 'axios';
@@ -12,6 +11,7 @@ function HobbyForm(){
 	function doTest(){
 		let x = test();
 		console.log(x);
+
 	};
 
 	function handleChange(event) {
@@ -38,7 +38,6 @@ function HobbyForm(){
         console.log('Some server error');
       })
 	};
-
 
 
 	return (

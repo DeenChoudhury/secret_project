@@ -1,7 +1,10 @@
 
 import React, {useState} from 'react';
 import './styles.css';
+<<<<<<< HEAD
 
+=======
+>>>>>>> 18563c81b0132b88905181f8cb6315b2873c7bf3
 import { Link } from 'react-router-dom';
 import HobbyForm from '../HobbyForm';
 import axios from 'axios';

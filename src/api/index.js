@@ -1,4 +1,3 @@
-
 export async function getTest(){
     await fetch("/user").then(res=>{
 		console.log(res);
