@@ -1,11 +1,4 @@
-<<<<<<< HEAD
-export async function test(){
-    await fetch("/rest").then(res=>{
-		console.log(res);
-	})
 
-}
-=======
 export async function getTest(){
     await fetch("/user").then(res=>{
 		console.log(res);
@@ -47,5 +40,6 @@ export async function getData(url = '', data = {}) {
 	  body: JSON.stringify(data) // body data type must match "Content-Type" header
 	});
 	return response.json(); // parses JSON response into native JavaScript objects
+
 };
->>>>>>> trying to link get request in sidebar
+

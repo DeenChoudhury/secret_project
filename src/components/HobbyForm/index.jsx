@@ -1,13 +1,5 @@
 import React, {useState} from 'react';
-<<<<<<< HEAD
 
-import './styles.css';
-import add_button from 'images/add_button.svg';
-import { test } from 'api';
-
-function HobbyForm(){
-	const [showHobbyForm, setShowHobbyForm] = useState(false);
-=======
 import './styles.css';
 import add_button from 'images/add_button.svg';
 import axios from 'axios';
@@ -16,14 +8,10 @@ import { getTest, postData } from 'api';
 function HobbyForm(){
 	const [showHobbyForm, setShowHobbyForm] = useState(false);
 	const [habit, setHabit] = useState("");
->>>>>>> trying to link get request in sidebar
 
 	function doTest(){
 		let x = test();
 		console.log(x);
-<<<<<<< HEAD
-	}
-=======
 	};
 
 	function handleChange(event) {
@@ -52,7 +40,7 @@ function HobbyForm(){
 	};
 
 
->>>>>>> trying to link get request in sidebar
+
 	return (
 		<div>
 			<div className="add-hobby-container">
@@ -62,9 +50,9 @@ function HobbyForm(){
 				</div>
 				{showHobbyForm ? doTest() : null}
 				<div className={showHobbyForm ? "form-container--animate":"form-container--hidden"}>
-<<<<<<< HEAD
+
 					<h1>YERRRRRRRRR</h1>
-=======
+
 					<form onSubmit={habitSubmit}>
 					<input 
 					onChange={handleChange} 
@@ -74,7 +62,6 @@ function HobbyForm(){
 					/>
 					<button>Submit</button>
 					</form>
->>>>>>> trying to link get request in sidebar
 				</div>
 			</div>
 		</div>
