@@ -10,6 +10,7 @@
     "babel-plugin-root-import": "^6.5.0",
     "bcrypt": "^5.0.0",
     "bcrypt-nodejs": "0.0.3",
+    "axios": "^0.20.0",
     "bootstrap": "^4.5.2",
     "feather-icons": "^4.28.0",
     "passport": "^0.4.1",
