@@ -6,14 +6,15 @@ import HobbyForm from 'components/HobbyForm';
 import './styles.css';
 
 
-function Home(){
+function HomePage(){
 	
 	return(
 		<div>
 			<Navbar/>
 			<HobbyForm/>
+
 		</div>
 	)
 }
 
-export default Home;
+export default HomePage;
