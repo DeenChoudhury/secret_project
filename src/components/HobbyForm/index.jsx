@@ -2,7 +2,6 @@ import React, {useState} from 'react';
 
 import './styles.css';
 import add_button from 'images/add_button.svg';
-import { test } from 'api';
 
 function HobbyForm(){
 	const [showHobbyForm, setShowHobbyForm] = useState(false);
