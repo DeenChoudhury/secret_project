@@ -14,9 +14,10 @@ function CardColumn(){
             >
                 <div>
                     <HabitCard/>
+                    {provided.placeholder}
                 </div>
             </div>
-        )};
+        )}
 
         </Droppable>
 

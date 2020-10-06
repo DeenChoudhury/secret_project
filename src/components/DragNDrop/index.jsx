@@ -1,10 +1,11 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 import initialData from './initialData';
-import CardColumn from './cardColumn';
 import { DragDropContext, Droppable, Draggable } from 'react-beautiful-dnd';
 import { useState } from 'react';
 import { useCallback } from 'react';
+import HabitCard from './habitCard';
+import CardColumn from './cardColumn';
 
 function DragNDrop(){
 
