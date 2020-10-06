@@ -4,8 +4,8 @@ import './styles.css';
 
 import { Link } from 'react-router-dom';
 import HobbyForm from '../HobbyForm';
-import axios from 'axios';
 import {getTest} from '../../api/index';
+import HabitButton from './habitButton';
 
 function Sidebar() {
     const [habits, setHabit] = useState([]);
@@ -16,44 +16,18 @@ function Sidebar() {
         });
     }, []);
 
-    // function getHabit() {
-    //     axios({
-    //      url:'http://localhost:3001/user',
-    //      method: 'GET',
-    //  })
-    //     .then((response) => {
-    //         const data = response.data;
-    //         setHabit = habits.push(data)
-    //         console.log(habits);
-    //         console.log('Data has been received');
-    //     })
-    //     .catch(() => {
-    //     console.log('Some server error');
-    //     })
-    // };
-    //         .then((response)=>{
-    //             const data = response.data;
-    //             setHabit = habits.push(data)
-    //             console.log(habits);
-    //             console.log('Data has been received');
-    //         })
-    //         .catch(()=>{
-    //             console.log('Error, data not received');
-    //         })
-    // // };
+    function echoUsers(users){
+        return users.map((user) => {
+            return (
+            <HabitButton 
+            username={user.first_name} 
+            >
+            <div>Hello</div>
+            </HabitButton>
+            )
+        });   
+    };
 
-    // function displayHabits(habits){
-    //     if (!habits.length) return null;
-
-    //     return habits.map((habit, index) => (
-    //         <div key={index}>
-    //             <li class="nav-item"></li>
-    //             <a class="nav-link" href="#">
-    //                 {habit.title}
-    //             </a>
-    //         </div>
-    //     ))
-    // };
     return (
         <nav id="sidebarMenu" class="sidebar">
             <div class="sidebar-menu">
@@ -92,15 +66,6 @@ function Sidebar() {
     )
 };
 
-function echoUsers(users){
-    var li = users.map(user => {
-        return (<li class="nav-item">
-                        <a class="nav-link" href="#">
-                            {user.username}
-                        </a>
-                    </li>)
-    });
-    
-    return (li)
-}
+
+
 export default Sidebar;

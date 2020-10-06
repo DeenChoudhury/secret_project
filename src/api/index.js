@@ -1,8 +1,6 @@
 export async function getTest(){
-    const data = await fetch("/users").then(res=>{
+    const data = await fetch("/users").then(res =>{
 		return res.json();
-	}).then(data=>{
-		return data
 	})
 	return data
 };
