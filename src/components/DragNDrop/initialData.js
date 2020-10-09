@@ -12,6 +12,9 @@ const initialData = {
         'habit4':{
             id:'habit4', 
             content: 'Jump someone'},
+        'habit5':{
+            id:'habit5', 
+            content: 'Fight Nate Diaz'},
     },
     columns: {
         'column-1': {
@@ -22,11 +25,11 @@ const initialData = {
         'column-2': {
             id: 'column-1',
             title: 'Completed',
-            habitIDs: [],
+            habitIDs: ['habit5'],
 
         }
     },
-    columnOrder: ['column-1'],
+    columnOrder: ['column-1', 'column-2'],
 };
 
 export default initialData;
