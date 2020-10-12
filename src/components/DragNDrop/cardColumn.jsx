@@ -7,20 +7,21 @@ import HabitCard from './habitCard';
 
 const Container = styled.div`
 position: relative;
-top: 40%;
-left: 30%;
-margin: 5px;
+top: 20%;
+left: 20%;
+margin-left: 2px;
+margin-right: 0px;
 border: 1px solid lightgrey;
 border-radius: 2px;
-width: 200px;
+width: 150px;
 `;
 
-const Title = styled.h3`
-padding: 8px;
+const Title = styled.h4`
+padding: 5px;
 `;
 
 const HabitList = styled.div`
-padding: 5px;
+padding: 3px;
 `;
 
 function CardColumn(props){

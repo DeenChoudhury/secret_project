@@ -10,7 +10,7 @@ function DragNDrop(){
 
 	const [columnData, setInitialData] = useState(initialData);
 	const [todoList, setTodoList] = useState([]);
-	const [completedList, setCompletedList] = useState(["Jump someone"]);
+	const [completedList, setCompletedList] = useState([]);
 	
 	console.log("completedList " + completedList);
 	console.log("todoList" + todoList);
@@ -20,7 +20,6 @@ function DragNDrop(){
 				setTodoList(res)
 		});
 	}, []);
-
 
 
 	const onDragEnd = useCallback(result => {
@@ -42,12 +41,14 @@ function DragNDrop(){
 			<DragDropContext
 			onDragEnd={onDragEnd}
 			>
-				<div style={{marginTop: '50px'}}>
+			<div style={{display:'flex', flexDirection:'row', width: '45%'}}>
+				<div style={{marginTop: '50px', width: '25%', marginLeft: '230px'}}>
 					<CardColumn title={'1% Better'} dropId={"droppable-0"} habits={todoList}/>
 				</div>
-				<div>
+				<div style={{marginTop: '50px', width: '25%'}}>
 					<CardColumn title={'Completed'} dropId={"droppable-1"} habits={completedList}/>
 				</div>
+			</div>	
 			</DragDropContext>
 	)
 };
