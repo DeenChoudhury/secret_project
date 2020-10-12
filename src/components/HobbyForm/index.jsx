@@ -19,7 +19,10 @@ function HobbyForm(){
 				</div>
 				{/* {showHobbyForm ? doTest() : null} */}
 				<div className={showHobbyForm ? "form-container--animate":"form-container--hidden"}>
-					<h1>YERRRRRRRRR</h1>
+					<form action="/habits" method="post">
+						<input type="text" name="new_habit"/>
+						<button name="habit-submit">Submit</button>
+					</form>
 				</div>
 			</div>
 		</div>

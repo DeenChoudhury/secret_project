@@ -35,7 +35,7 @@ function CardColumn(props){
             		{...provided.droppableProps}
             		>
                 {Array.from(props.habits).map((habit, index) => (
-                  <HabitCard habit={habit} index={index} />
+                  <HabitCard habit={habit.habit_name} index={index} />
 								))}
                 {provided.placeholder}
             </HabitList>

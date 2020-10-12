@@ -1,16 +1,27 @@
 import React, { Component } from 'react';
 import initialData from './initialData';
 import { DragDropContext, Droppable, Draggable } from 'react-beautiful-dnd';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { useCallback } from 'react';
 import CardColumn from './cardColumn';
+import {getHabits} from '../../api';
 
 function DragNDrop(){
 
 	const [columnData, setInitialData] = useState(initialData);
-	const [todoList, setTodoList] = useState(['Run', 'Read', 'Sleep']);
+	const [todoList, setTodoList] = useState([]);
 	const [completedList, setCompletedList] = useState(["Jump someone"]);
+	
 	console.log("completedList " + completedList);
+	console.log("todoList" + todoList);
+
+	useEffect(() => {
+		getHabits().then((res)=>{
+				setTodoList(res)
+		});
+	}, []);
+
+
 
 	const onDragEnd = useCallback(result => {
 		if(!(result.destination.droppableId === result.source.droppableId)){
