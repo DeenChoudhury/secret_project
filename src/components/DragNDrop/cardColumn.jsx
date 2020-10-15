@@ -1,9 +1,7 @@
-import { Card } from '@material-ui/core';
 import styled from 'styled-components';
 import React from 'react';
 import { Droppable } from 'react-beautiful-dnd';
 import HabitCard from './habitCard';
-
 
 const Container = styled.div`
 position: relative;
@@ -24,26 +22,25 @@ const HabitList = styled.div`
 padding: 3px;
 `;
 
-function CardColumn(props){
-	console.log(props.habits);
-    return(
-        <Container>
-        	<Title>{props.title}</Title>
-        		<Droppable droppableId={props.dropId}>
-        			{(provided, snapshot) => (
-            		<HabitList
-            		ref={provided.innerRef}
-            		{...provided.droppableProps}
-            		>
-                {Array.from(props.habits).map((habit, index) => (
-                  <HabitCard habit={habit.habit_name} index={index} />
-								))}
-                {provided.placeholder}
-            </HabitList>
+function CardColumn(props) {
+  const { title, dropId, habits } = props;
+  return (
+    <Container>
+      <Title>{title}</Title>
+      <Droppable droppableId={dropId}>
+        {(provided) => (
+          <HabitList
+            ref={provided.innerRef}
+            {...provided.droppableProps}
+          >
+            {Array.from(habits).map((habit, index) => (
+              <HabitCard habit={habit.habit_name} index={index} />))}
+            {provided.placeholder}
+          </HabitList>
         )}
-        		</Droppable>
-        </Container>
-    );
+      </Droppable>
+    </Container>
+  );
 }
 
 export default CardColumn;

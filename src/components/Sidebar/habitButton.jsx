@@ -1,12 +1,15 @@
-import React, {useState, useEffect, Component} from 'react';
+import React from 'react';
 
-function HabitButton(props){
-    return(<li class="nav-item">
-              <a class="nav-link" href="#">
-                {props.username}
-                {props.children}
-              </a>
-            </li>)
+function HabitButton(props) {
+  const { username, children } = props;
+  return (
+    <li className="nav-item">
+      <a className="nav-link" href="#">
+        {username}
+        {children}
+      </a>
+    </li>
+  );
 }
 
 export default HabitButton;
