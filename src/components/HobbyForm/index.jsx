@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 
 import './styles.css';
-import addButton from '../../images/add_button.svg';
+import addButton from 'images/add_button.svg';
 
 function HobbyForm() {
   const [showHobbyForm, setShowHobbyForm] = useState(false);

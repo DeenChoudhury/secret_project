@@ -4,7 +4,7 @@ import './styles.css';
 
 import { Link } from 'react-router-dom';
 import HobbyForm from '../HobbyForm';
-import {getHabits, getTest} from '../../api/index';
+import {getHabits, getTest} from 'api/index';
 import HabitButton from './habitButton';
 
 function Sidebar() {
