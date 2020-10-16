@@ -1,6 +1,7 @@
 .add-hobby-container{
-	position:fixed;
-	right:50vw;
+	position: fixed;
+	top: 75px;
+	right:150px;
 	width:100px;
 	display:flex;
 	flex-direction:column;
@@ -11,8 +12,9 @@
 	height:40px;
 	width:40px;
 	display:flex;
-	justify-content: center;
+	justify-content: flex-end;
 }
+
 .btn-container:hover{
 	cursor:pointer;
 }
