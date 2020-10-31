@@ -11,7 +11,8 @@ background-color: ${(props) => (props.isDragging ? 'lightgreen' : 'white')};
 `;
 
 function HabitCard(props) {
-  const { habit, index } = props;
+  const {key, habit, index } = props;
+  //TODO: the key is undefined, i have no fucking idea why
   return (
     <Draggable draggableId={habit} index={index}>
       {(provided) => (
@@ -20,7 +21,7 @@ function HabitCard(props) {
           {...provided.draggableProps}
           {...provided.dragHandleProps}
         >
-          {props.habit}
+          {habit}
         </Container>
       )}
     </Draggable>

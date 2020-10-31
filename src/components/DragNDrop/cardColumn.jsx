@@ -12,6 +12,8 @@ margin-right: 0px;
 border: 1px solid lightgrey;
 border-radius: 2px;
 width: 150px;
+flex-grow: 1;
+min-height: 100px;
 `;
 
 const Title = styled.h4`
@@ -23,7 +25,8 @@ padding: 3px;
 `;
 
 function CardColumn(props) {
-  const { title, dropId, habits } = props;
+  const { title, dropId, habits} = props;
+  console.log(habits);
   return (
     <Container>
       <Title>{title}</Title>
@@ -34,7 +37,7 @@ function CardColumn(props) {
             {...provided.droppableProps}
           >
             {Array.from(habits).map((habit, index) => (
-              <HabitCard habit={habit.habit_name} index={index} />))}
+              <HabitCard key={habit.habit_name} habit={habit.habit_name} index={index} />))}
             {provided.placeholder}
           </HabitList>
         )}
