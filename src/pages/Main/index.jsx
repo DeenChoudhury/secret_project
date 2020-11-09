@@ -1,10 +1,12 @@
 import React from 'react';
 import { Button } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
+import Calendar from 'components/Calendar';
 
 function MainPage() {
   return (
     <div>
+      <Calendar/>
       <Link to="/login">
         <Button variant="dark">
           Login
