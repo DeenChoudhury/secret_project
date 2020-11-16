@@ -1,7 +1,6 @@
 .add-hobby-container{
-	position: fixed;
-	top: 75px;
-	right:150px;
+	position: relative;
+	margin-right:30px;
 	width:100px;
 	display:flex;
 	flex-direction:column;
@@ -51,7 +50,7 @@
 
 .form-container--animate{
 	width:500px;
-	background-color: red;
+	background-color:white;
 	height:500px;
 	-webkit-transition: max-height 0.5s ease-in-out;
 	transition: all 0.4s ease-in-out;

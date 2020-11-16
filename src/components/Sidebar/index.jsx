@@ -3,15 +3,14 @@ import React, {useState, useEffect} from 'react';
 import './styles.css';
 
 import { Link } from 'react-router-dom';
-import HobbyForm from '../HobbyForm';
-import {getTracker, getTest} from 'api/index';
+import {getHabits, getTest, getTracker} from 'api/index';
 import HabitButton from './habitButton';
 
 function Sidebar() {
     const [habits, setHabit] = useState([]);
     
     useEffect(() => {
-        getTracker().then((res)=>{
+        getHabits().then((res)=>{
             setHabit(res)
         });
     }, []);
@@ -19,8 +18,9 @@ function Sidebar() {
     function echoUsers(users){
         return users.map((user) => {
             return (
-            <HabitButton 
-            username={user.habit_name} 
+            <HabitButton
+                username={user.habit_name} 
+                children={user._id}
             >
             </HabitButton>
             )
@@ -35,7 +35,7 @@ function Sidebar() {
                     <li class="nav-item">
                        <h3>Habits</h3>
                     </li>
-                    {echoUsers(habits)}
+                    {echoUsers(habits)} 
                 </ul>
 
             <h6 class="sidebar-title2">

@@ -5,6 +5,7 @@ import HomePage from 'pages/Home';
 import LoginPage from 'pages/Login';
 import SignupPage from 'pages/Signup';
 import MainPage from 'pages/Main';
+import HabitsPage from 'pages/Habits';
 
 
 // import Button from 'react-bootstrap/Button';
@@ -33,6 +34,7 @@ function App() {
         <Switch>
           <Route exact path="/" component={MainPage} />
           <Route path="/dashboard" component={HomePage} />
+          <Route path="/habits/:habitID" component={HabitsPage} />
           {/* <PrivateRoute isLoggedIn={isLoggedIn} path='/dashboard' component={HomePage} /> */}
           <Route path="/login" component={LoginPage} />
           <Route path="/signup" component={SignupPage} />

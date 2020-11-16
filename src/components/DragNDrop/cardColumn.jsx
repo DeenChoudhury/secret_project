@@ -5,8 +5,6 @@ import HabitCard from './habitCard';
 
 const Container = styled.div`
 position: relative;
-top: 20%;
-left: 20%;
 margin-left: 2px;
 margin-right: 0px;
 border: 1px solid lightgrey;

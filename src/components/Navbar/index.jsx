@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import HobbyForm from 'components/HobbyForm';
 
 function Navbar() {
   return (
@@ -12,6 +13,7 @@ function Navbar() {
           </li>
         </ul>
       </div>
+      <HobbyForm />
     </nav>
   );
 }

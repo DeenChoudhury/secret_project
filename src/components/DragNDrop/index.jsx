@@ -5,6 +5,7 @@ import { DragDropContext } from 'react-beautiful-dnd';
 
 import CardColumn from './cardColumn';
 import { getTracker, postTracker } from '../../api';
+import moment from 'moment';
 
 function DragNDrop() {
   const [todoList, setTodoList] = useState([]);
@@ -15,7 +16,7 @@ function DragNDrop() {
       console.log('res', res);
       const filteredToDo = res.filter(habit => !habit.done);
       const filteredCompleted = res.filter(habit => habit.done);
-
+      
       setTodoList(filteredToDo);
       setCompletedList(filteredCompleted);
     });
@@ -51,8 +52,8 @@ function DragNDrop() {
     <DragDropContext
       onDragEnd={onDragEnd}
     >
-      <div style={{ display: 'flex', flexDirection: 'row', width: '45%' }}>
-        <div style={{ marginTop: '50px', width: '25%', marginLeft: '230px' }}>
+      <div style={{ display: 'flex', flexDirection: 'row', width: '45%'}}>
+        <div style={{ marginTop: '50px', width: '25%'}}>
           <CardColumn title="1% Better" dropId="droppable-0" habits={todoList} />
         </div>
         <div style={{ marginTop: '50px', width: '25%' }}>
