@@ -1,10 +1,9 @@
 import React from 'react';
-
+import "./styles.css";
 import Sidebar from 'components/Sidebar';
 import Navbar from 'components/Navbar';
 import HabitHistory from 'components/HabitHistory';
 
-import './styles.css';
 
 function HabitsPage() {
   return (

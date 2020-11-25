@@ -1,11 +1,16 @@
+
 body {
   font-size: .875rem;
 }
+
 #sidebarMenu{
+  top: 0%;
   width:15%;
 }
 
 .sidebar-menu {
+  position: relative;
+  top: 0%;
   grid-column: span 4;
   border: #333;
 }
@@ -84,9 +89,21 @@ body {
   text-transform: uppercase;
 }
 
+.nav-link{
+  margin-top: 5px;
+  margin-bottom: 5px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.nav-item{
+  text-align: center;
+  margin: 0;
+}
 
 .first-nav-item {
-  top: 5;
+  text-align: center;
+  top: 5px;
   padding-top: 5em;
 }
 

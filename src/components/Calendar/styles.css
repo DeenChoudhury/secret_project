@@ -14,7 +14,7 @@
   width: 1000px;
   height: auto;
   margin: 15px;
-  left: 20%;
+  left: 7.5%;
   padding: 0;
   display: block;
   overflow: hidden;
@@ -45,7 +45,7 @@
   display: table;
   border-spacing: 0;
   border-collapse: separate;
-  background-color: #cd283c;
+  background-color: #4a4848;
   border-radius: 3px 3px 0 0;
   -webkit-border-radius: 3px 3px 0 0;
 }
@@ -116,13 +116,13 @@
   font-weight: normal;
   line-height: 35px;
   border: 0;
-  background-color: #223344;
+  background-color: #41566a;
 }
 .tail-datetime-calendar .calendar-date table thead tr > th.today{
   border: 1px solid red;
 }
 .tail-datetime-calendar .calendar-date table tbody tr > * {
-  color: #334455;
+  color: #0e1115;
   cursor: pointer;
   position: relative;
   font-size: 14px;
@@ -155,10 +155,10 @@
   border-color: #3296c8;
 }
 .tail-datetime-calendar .calendar-date table tbody tr > *:hover {
-  color: #cd283c;
+  color: #3296c8;
 }
 .tail-datetime-calendar .calendar-date table tbody tr > *:hover:after {
-  border-color: #cd283c;
+  border-color: #454444;
 }
 .tail-datetime-calendar .calendar-date table tbody tr > *.empty,
 .tail-datetime-calendar .calendar-date table tbody tr > *.disable {

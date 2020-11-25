@@ -14,6 +14,35 @@
 	justify-content: flex-end;
 }
 
+.input-field{
+	padding: 5px;
+	margin: 5px 0;
+}
+
+.checkbox-container{
+	padding: 5px;
+	margin-top: 5px;
+	border-radius: 3px;
+	display: inline-block;
+	position: relative;
+}
+
+.checkbox-container input{ 
+	margin: 5px;
+}
+
+.weekend-checkbox-container{
+	background-color: #fafafa;
+	padding: 5px;
+	border-radius: 3px;
+	display: inline-block;
+	position: relative;
+}
+
+.weekend-checkbox-container input{ 
+	margin: 5px;
+}
+
 .btn-container:hover{
 	cursor:pointer;
 }

@@ -21,6 +21,14 @@ export async function getHabits(){
 	return data;
 };
 
+export async function getCompletions(){
+	const data = await fetch("/completion").then(res => {
+		console.log(res);
+		return res.json();
+	})
+	return data;
+};
+
 export async function getHabitHistory(route){
 	const data = await fetch(route).then(res => {
 		console.log("getHabitHistoryRes", res);

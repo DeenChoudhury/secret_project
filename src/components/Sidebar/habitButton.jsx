@@ -1,4 +1,5 @@
 import React from 'react';
+import './styles.css';
 
 function HabitButton(props) {
   const { username, children } = props;

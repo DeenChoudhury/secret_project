@@ -1,5 +1,5 @@
 import React from 'react';
-import './App.css';
+// import './App.css';
 import { BrowserRouter, Switch, Route, Redirect } from 'react-router-dom';
 import HomePage from 'pages/Home';
 import LoginPage from 'pages/Login';
@@ -36,8 +36,8 @@ function App() {
           <Route path="/dashboard" component={HomePage} />
           <Route path="/habits/:habitID" component={HabitsPage} />
           {/* <PrivateRoute isLoggedIn={isLoggedIn} path='/dashboard' component={HomePage} /> */}
-          <Route path="/login" component={LoginPage} />
-          <Route path="/signup" component={SignupPage} />
+          {/* <Route path="/login" component={LoginPage} />
+          <Route path="/signup" component={SignupPage} /> */}
         </Switch>
       </BrowserRouter>
     </div>

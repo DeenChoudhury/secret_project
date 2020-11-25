@@ -5,21 +5,22 @@ import HabitCard from './habitCard';
 
 const Container = styled.div`
 position: relative;
-margin-left: 2px;
+margin-left: 20px;
 margin-right: 0px;
-border: 1px solid lightgrey;
-border-radius: 2px;
-width: 150px;
+border: 1px solid #3296c8;
+border-radius: 10px;
+width: 200px;
 flex-grow: 1;
 min-height: 100px;
 `;
 
 const Title = styled.h4`
+text-align: center;
 padding: 5px;
 `;
 
 const HabitList = styled.div`
-padding: 3px;
+padding: 2px;
 `;
 
 function CardColumn(props) {

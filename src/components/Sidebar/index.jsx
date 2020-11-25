@@ -1,13 +1,21 @@
 
 import React, {useState, useEffect} from 'react';
 import './styles.css';
-
 import { Link } from 'react-router-dom';
 import {getHabits, getTest, getTracker} from 'api/index';
 import HabitButton from './habitButton';
 
 function Sidebar() {
     const [habits, setHabit] = useState([]);
+
+    const styles = {
+        menu: {
+            margin:"10px"
+        },
+        title: {
+
+        }
+    };
     
     useEffect(() => {
         getHabits().then((res)=>{
@@ -28,18 +36,16 @@ function Sidebar() {
     };
 
     return (
-        <nav id="sidebarMenu" class="sidebar">
-            <div class="sidebar-menu">
-                <ul class="nav flex-column">
-                    <li class="first-nav-item"></li>
-                    <li class="nav-item">
+        <nav id="sidebarMenu" className="sidebar">
+            <div className="sidebar-menu">
+                <ul className="nav flex-column">
+                    <li className="first-nav-item">
                        <h3>Habits</h3>
                     </li>
                     {echoUsers(habits)} 
                 </ul>
 
             <h6 class="sidebar-title2">
-                <span>Saved reports</span>
                 <a class="d-flex align-items-center text-muted" href="#" aria-label="Add a new report">
                 </a>
             </h6>

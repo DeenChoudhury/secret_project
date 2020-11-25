@@ -6,6 +6,10 @@ function HabitHistory() {
   
   const queryString = window.location.pathname;
 
+  const style = {
+    textAlign:"center"
+  }
+
   useEffect(() => {
       getHabitHistory(queryString).then((res)=> {
           setHabitHistory(res[0])
@@ -13,7 +17,7 @@ function HabitHistory() {
   }, []);
 
   return (
-    <h1>{habitHistory.habit_name}</h1>
+    <h1 style={style}>{habitHistory.habit_name}</h1>
   )
 };
 

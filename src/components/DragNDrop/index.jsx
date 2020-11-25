@@ -52,11 +52,11 @@ function DragNDrop() {
     <DragDropContext
       onDragEnd={onDragEnd}
     >
-      <div style={{ display: 'flex', flexDirection: 'row', width: '45%'}}>
+      <div style={{ display: 'flex', flexDirection: 'row', width: '45%', marginLeft: '10%'}}>
         <div style={{ marginTop: '50px', width: '25%'}}>
           <CardColumn title="1% Better" dropId="droppable-0" habits={todoList} />
         </div>
-        <div style={{ marginTop: '50px', width: '25%' }}>
+        <div style={{ marginTop: '50px', width: '25%', marginLeft: '100px' }}>
           <CardColumn title="Completed" dropId="droppable-1" habits={completedList} /> 
         </div>
       </div>

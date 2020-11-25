@@ -4,7 +4,10 @@ import styled from 'styled-components';
 
 const Container = styled.div`
 border: 1px solid lightgrey;
-border-radius: 2px;
+text-align: center;
+background-color: #41566a;
+color: #41566a;
+border-radius: 20px;
 padding: 5px;
 margin-bottom: 2px;
 background-color: ${(props) => (props.isDragging ? 'lightgreen' : 'white')};
